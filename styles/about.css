@@ -1,15 +1,38 @@
-.section {
+.section-1 {
   display: flex;
+  /* flex-wrap: wrap; */
+  gap: 12px;
   /* justify-content: center; */
-  padding: 200px;
+  padding: 10vw;
+  /* padding: 200px; */
+  background-color: var(--background-color-section);
+  /* text-align: center; */
 }
 
 .section-text {
-  margin: 0 0 0 200px;
+  margin: 0 0 0 100px;
+  flex: 50%;
 }
 
+.section-text p {
+  margin-top: 30px;
+}
 .section-photo {
   /* box-shadow: 15px 15px 5px #5babcd; */
-  padding: 20px;
-  border: 3px solid rgba(91, 171, 205, 0.4);
+  text-align: center;
+  padding: 2vh;
+  /* border: 0.2vw solid rgba(91, 171, 205, 0.4); */
+  flex: 50%;
+  margin-bottom: 20px;
+}
+
+.section-photo img {
+  border: 0.4vw solid rgba(60, 113, 136, 0.5);
+}
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 1024px) {
+  .section-1 {
+    flex-direction: column;
+  }
 }
