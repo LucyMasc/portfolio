@@ -1,0 +1,15 @@
+.section {
+  display: flex;
+  /* justify-content: center; */
+  padding: 200px;
+}
+
+.section-text {
+  margin: 0 0 0 200px;
+}
+
+.section-photo {
+  /* box-shadow: 15px 15px 5px #5babcd; */
+  padding: 20px;
+  border: 3px solid rgba(91, 171, 205, 0.4);
+}

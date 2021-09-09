@@ -1,0 +1,104 @@
+.indicator-wrapper {
+  display: flex;
+  /* flex-wrap: wrap; */
+  position: absolute;
+  top: 85%;
+  left: 90%;
+}
+
+.scroll-btn {
+  position: absolute;
+  width: 350%;
+  right: 10%;
+}
+
+.scroll-btn a {
+  text-decoration: none;
+  color: #5babcd;
+  font-size: 1vw;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+/* .indicator-wrapper a {
+  display: inline-block;
+  position: absolute;
+  width: 200%;
+  right: 200px;
+} */
+
+.indicator {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  /* background-color: #F7F7F7; */
+  transform: rotate(45deg);
+  left: 93%;
+}
+
+.indicator > span {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 60%;
+  height: 60%;
+  display: block;
+  box-sizing: border-box;
+  border: none;
+  border-right: 3px solid #f7f7f7;
+  border-bottom: 3px solid #f7f7f7;
+  animation: animate 1s linear infinite;
+  /* cursor: pointer; */
+}
+
+.indicator span:nth-child(1) {
+  top: -30px;
+  left: -30px;
+  animation-delay: 0.1s;
+}
+
+.indicator span:nth-child(2) {
+  top: -15px;
+  left: -15px;
+  animation-delay: 0.2s;
+}
+
+.indicator span:nth-child(3) {
+  top: 0px;
+  left: 0px;
+  animation-delay: 0.3s;
+}
+
+/* .indicator span:nth-child(4) {
+  top: 15px;
+  left: 15px;
+  animation-delay: 0.6s;
+} */
+
+/* .indicator span:nth-child(5){
+  top: 30px;
+  left: 30px;
+  animation-delay: 0.8s;
+} */
+
+@keyframes animate {
+  0% {
+    border-color: #5babcd;
+    transform: translate(0, 0);
+  }
+  20% {
+    border-color: #5babcd;
+    transform: translate(15px, 15px);
+  }
+  20.1%,
+  100% {
+    border-color: #37ddd5;
+  }
+}
+
+@media (max-width: 1000px) {
+  .scroll-btn,
+  .indicator,
+  .indicator > span {
+    display: none;
+  }
+}

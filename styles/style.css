@@ -1,0 +1,21 @@
+@import url('navbar.css');
+@import url('indicator.css');
+@import url('header.css');
+@import url('about.css');
+
+:root {
+  --background-color: #121013;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-color);
+  color: #f7f7f7;
+}
+
+/* ----------------------------CLASS SELECTORS -------------------*/
