@@ -12,12 +12,14 @@
   right: 10%;
 }
 
-.scroll-btn a {
+.scroll-btn button {
   text-decoration: none;
   color: #5babcd;
   font-size: 1vw;
   font-weight: 600;
   letter-spacing: 0.5px;
+  border: none;
+  background-color: var(--background-color);
 }
 /* .indicator-wrapper a {
   display: inline-block;
