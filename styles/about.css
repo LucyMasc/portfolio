@@ -40,3 +40,117 @@
     text-align: center;
   }
 }
+
+/* ------------- section 2 -------------- */
+
+.section-2 {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px;
+}
+
+.section-2 > div {
+  margin: 0 15px;
+  cursor: pointer;
+  transition: 0.5s;
+  /* z-index: -5; */
+}
+.section-2 > div > img {
+  border-radius: 10px;
+}
+
+/* javascript badge color F0DB4F */
+/* riby badge color 990D03 */
+.section-2 div {
+  /* position: relative;
+  bottom: 20px; */
+  /* display: block; */
+  /* background-color: #da261a; */
+  position: relative;
+  transition: 0.5s;
+  /* height: 6vw;
+  width: 6vw; */
+  /* left: 100px; */
+  display: flex;
+  border-radius: 10px;
+}
+
+.section-2 div::before {
+  position: absolute;
+  width: 5vw;
+  height: 5vw;
+  top: 0px;
+  right: 0px;
+  content: '';
+  /* background-color: yellow; */
+  /* box-shadow: 0 0 20px #f0db4f; */
+  /* border: 3px solid #f0db4f; */
+  transition: 0.5s;
+  /* transform: scale(0.9); */
+  z-index: -1;
+  /* transform: scaleY(0.9); */
+  /* transition: transform 250ms ease-in-out; */
+  border-radius: 10px;
+}
+
+.section-2 div:hover::before {
+  /* box-shadow: 0 0 20px #f0db4f; */
+  width: 5vw;
+  height: 5vw;
+  /* transform: scale(1.2); */
+  filter: blur(3px);
+  animation: wobble-hor-bottom 0.8s both;
+  /* border-radius: 100px; */
+}
+
+/* .div-2::before {
+  background-color: #a71501;
+} */
+.div-2:hover::before {
+  box-shadow: 0 0 20px #a71501;
+  background-color: #a71501;
+}
+.div-2:hover {
+  box-shadow: 0 0 20px #a71501;
+  background-color: #a71501;
+}
+/* .div-2:hover {
+  box-shadow: 0 0 20px #da261a;
+} */
+
+.wobble-hor-bottom {
+  animation: wobble-hor-bottom 0.8s both;
+  animation: wobble-hor-bottom 0.8s both;
+}
+
+/* Keyframes */
+
+@keyframes wobble-hor-bottom {
+  /* 0%,
+  100% {
+    transform: translateX(0%);
+    transform: translateX(0%);
+    transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+  } */
+  15% {
+    transform: translateX(-30px) rotate(-6deg);
+    transform: translateX(-30px) rotate(-6deg);
+  }
+  30% {
+    transform: translateX(15px) rotate(6deg);
+    transform: translateX(15px) rotate(6deg);
+  }
+  45% {
+    transform: translateX(-15px) rotate(-3.6deg);
+    transform: translateX(-15px) rotate(-3.6deg);
+  }
+  60% {
+    transform: translateX(9px) rotate(2.4deg);
+    transform: translateX(9px) rotate(2.4deg);
+  }
+  75% {
+    transform: translateX(-6px) rotate(-1.2deg);
+    transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
