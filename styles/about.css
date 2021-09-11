@@ -42,26 +42,39 @@
 }
 
 /* ------------- section 2 -------------- */
-
-.section-2 {
+.section-2-title {
+  /* border-bottom: 0.01px solid; */
+  /* display: inline-block; */
+  /* position: relative; */
+  /* left: 30px; */
+  padding: 30px;
+  letter-spacing: 0.1vw;
+  text-align: center;
+  /* margin-top: 20px;
+  margin-bottom: 0;
+  margin-right: 80px; */
+}
+.section-2-imgs {
+  margin: 0;
   display: flex;
   justify-content: space-around;
-  padding: 50px;
+  padding: 20px 50px 50px 50px;
+  border-bottom: 0.1px solid;
 }
 
-.section-2 > div {
+.section-2-imgs > div {
   margin: 0 15px;
   cursor: pointer;
   transition: 0.5s;
   /* z-index: -5; */
 }
-.section-2 > div > img {
+.section-2-imgs > div > img {
   border-radius: 10px;
 }
 
 /* javascript badge color F0DB4F */
 /* riby badge color 990D03 */
-.section-2 div {
+.section-2-imgs div {
   /* position: relative;
   bottom: 20px; */
   /* display: block; */
@@ -75,7 +88,7 @@
   border-radius: 10px;
 }
 
-.section-2 div::before {
+.section-2-imgs div::before {
   position: absolute;
   width: 5vw;
   height: 5vw;
@@ -93,7 +106,7 @@
   border-radius: 10px;
 }
 
-.section-2 div:hover::before {
+.section-2-imgs div:hover::before {
   /* box-shadow: 0 0 20px #f0db4f; */
   width: 5vw;
   height: 5vw;
@@ -116,7 +129,7 @@
 }
 .div-3:hover::before {
   box-shadow: 0 0 20px #a71501;
-  background-color: #a71501;
+  background-color: #6a1c25;
 }
 .div-4:hover::before {
   box-shadow: 0 0 20px #336791;
@@ -155,8 +168,8 @@
 }
 
 .div-3:hover {
-  box-shadow: 0 0 20px #a71501;
-  background-color: #a71501;
+  box-shadow: 0 0 20px #a62c39;
+  background-color: #a62c39;
 }
 .div-4:hover {
   box-shadow: 0 0 20px #50d1f1;
