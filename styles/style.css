@@ -21,5 +21,12 @@ body {
   background-color: var(--background-color);
   color: #f7f7f7;
 }
-
+/* svg {
+  visibility: hidden;
+} */
 /* ----------------------------CLASS SELECTORS -------------------*/
+
+/* .section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+} */
