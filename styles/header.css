@@ -1,24 +1,52 @@
 .header {
-  /* align-content: center; */
-  position: relative;
+  display: flex;
+  justify-content: space-around;
+  padding: 90px;
+  /* gap: 12px; */
+  /* height: 90vh; */
+  /* width: 100vw; */
+}
+.svg-div {
   /* background-color: blue; */
-  /* height: 150%; */
-  width: 100%;
+  /* padding: 20px; */
+  margin: 0 30px 0 70px;
+  /* width: 40vw; */
+  /* height: 25vw; */
+}
+svg {
+  /* height: 25vw;
+  width: 40vw; */
+  height: 500px;
+  /* width: ; */
+}
+.header--title {
+  /* margin: 0 30px 0 30px; */
+  padding-top: 100px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: left;
+  /* width: 50vw; */
+  /* background: hotpink; */
+  /* line-height: 5; */
+  /* padding: 40px; */
 }
 
-.header--title {
-  display: block;
-  position: absolute;
-  /* right: 30%; */
-  top: 40%;
-  font-family: 'Montserrat', sans-serif;
-  text-align: center;
-  width: 100%;
-  /* background: hotpink; */
-  aspect-ratio: 100 / 28;
+.main-title {
+  font-size: 50px;
+  /* line-height: -10; */
 }
 
 /* ------------------------ ID SELECTORS ------------------- */
-#dummy {
+/* #dummy {
   padding-top: 29%;
+} */
+
+/* @media (max-width: 1024px) {
+  .header {
+    flex-direction: column;
+    /* text-align: center; */
+
+@media (max-width: 778px) {
+  svg {
+    display: none;
+  }
 }

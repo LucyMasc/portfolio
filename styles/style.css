@@ -30,3 +30,60 @@ body {
   opacity: 0;
   transform: translateY(8rem);
 } */
+#hair {
+  animation: my-hair 0.7s ease-in-out infinite alternate;
+  transform-box: fill-box;
+}
+#back {
+  animation: back 0.9s infinite alternate;
+  transform-box: fill-box;
+}
+
+#code-lines-2,
+#code-lines-3,
+#code-lines {
+  /* background-color: #3A3F41; */
+  animation: code 0.8s forwards infinite alternate;
+}
+svg {
+  animation: svg-complete 3s ease-in-out infinite alternate;
+}
+
+@keyframes my-hair {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(-2deg);
+  }
+}
+
+@keyframes back {
+  from {
+    transform: rotate(2deg);
+  }
+  to {
+    transform: rotateZ(5deg);
+  }
+}
+
+@keyframes code {
+  from {
+    /* background-color: #3A3F41; */
+    /* transform: rotate(0); */
+    opacity: 0;
+  }
+  to {
+    /* transform: rotate(10deg); */
+    opacity: 1;
+  }
+}
+
+@keyframes svg-complete {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-20px);
+  }
+}
