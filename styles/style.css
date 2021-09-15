@@ -30,6 +30,8 @@ body {
   opacity: 0;
   transform: translateY(8rem);
 } */
+
+/* SVG GIRL PROGRAMMER */
 #hair {
   animation: my-hair 0.7s ease-in-out infinite alternate;
   transform-box: fill-box;
@@ -87,3 +89,5 @@ svg {
     transform: translateY(-20px);
   }
 }
+
+/* SLIDER */
