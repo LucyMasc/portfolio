@@ -2,9 +2,11 @@
 // import 'matchmedia-polyfill';
 // import 'matchmedia-polyfill/matchMedia.addListener';
 const mainTitle = document.querySelector('.main-title');
+const mainTitleLast = document.querySelector('.last-name');
+// console.log((mainTitleSpan.innerHTML = 2));
 const scrollBtn = document.querySelector('.scroll-btn-a');
 const section1 = document.querySelector('.section-1');
-const svgCircle = document.querySelector('svg');
+const svgGirlProgrammer = document.querySelector('svg');
 const photo = document.querySelector('profile-photo');
 let loader = document.querySelector('.loader');
 const canvas = document.getElementById('c');
@@ -99,6 +101,8 @@ console.log(genRandom(10, 20));
 //   this.document.body.removeAttribute('hidden');
 // });
 
+//////////
+
 document.onreadystatechange = function () {
   const state = document.readyState;
   if (state === 'interactive') {
@@ -106,21 +110,48 @@ document.onreadystatechange = function () {
   } else if (state === 'complete') {
     setTimeout(() => {
       document.querySelector('.page').style.visibility = 'visible';
-      loader.parentElement.removeChild(loader);
-    }, 1000);
+      removeLoader = loader.parentElement.removeChild(loader);
+    }, 1100);
   }
 };
 
-// ------------------------- TYPE EFFECT------------------------------
-
-const titleString = 'Luciana Mascarenhas';
-
-const stringArray = titleString.split('');
-
-// let loopTimer;
-const
-
+// frameLoop();
 // AOS.init();
 
 // you = Person.new("you")
 // wanna_do_something? ? you.find(way) : you.find(excuse)
+
+// ------------------------- TYPE EFFECT------------------------------
+const firstName = 'Luciana';
+const lastName = 'Mascarenhas';
+
+const splitFirstName = firstName.split('');
+const splitLastName = lastName.split('');
+// console.log(splitLastName);
+let loopTimer, loopTimer2;
+
+const frameLoop = function () {
+  const loopTimer = setTimeout('frameLoop()', 100);
+  if (splitFirstName.length > 0) {
+    mainTitle.innerHTML += splitFirstName.shift();
+  } else {
+    clearTimeout(loopTimer);
+  }
+};
+
+setTimeout(() => {
+  frameLoop();
+}, 1100);
+
+const frameLoopLast = function () {
+  const loopTimer2 = setTimeout('frameLoopLast()', 100);
+  if (splitLastName.length > 0) {
+    mainTitleLast.innerHTML += splitLastName.shift();
+  } else {
+    clearTimeout(loopTimer2);
+  }
+};
+
+setTimeout(() => {
+  frameLoopLast();
+}, 1800);
