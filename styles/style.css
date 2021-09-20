@@ -25,6 +25,27 @@ h2 {
 } */
 /* ---------------------------- HEADER -----------------------*/
 
+.language-switcher-flags {
+  display: inline-block;
+  justify-content: space-around;
+  position: absolute;
+  /* height: 10px; */
+  height: 10px;
+  right: 100px;
+  top: 20px;
+}
+.language-switcher-flags > a {
+  margin: 0 7px;
+}
+.language-switcher-flags > a > img {
+  height: 50px;
+  position: relative;
+
+  /* clear: both; */
+  /* margin-top: auto; */
+  /* position: absolute; */
+}
+
 canvas {
   display: flex;
   position: absolute;
