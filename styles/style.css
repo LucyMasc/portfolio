@@ -29,14 +29,18 @@ canvas {
   display: flex;
   position: absolute;
   z-index: -1;
+  /* included now below */
+  width: 100%;
+  height: 1000px;
 }
 
 .header {
   display: flex;
   justify-content: space-around;
   margin: 0 auto;
-  height: 810px;
+  height: 820px; /* this made the height be right without the little space on the bottom
   width: min-content;
+  /* width 100% in small screens is ok on the left, but still space left on the right */
   /* padding: 90px; */
   /* background-color: #09d1b3; */
 }
@@ -48,6 +52,7 @@ canvas {
 
 .header--title {
   margin: 220px 50px 200px 0px;
+  padding-left: 8%; /* this makes the title be far from the right border on small screens
   font-family: 'Open Sans', sans-serif;
   /* position: fixed; */
   text-align: left;
@@ -57,8 +62,9 @@ canvas {
 
 .main-title {
   /* position: fixed; */
-  font-size: 8vmin;
+  font-size: 10vmin;
   font-weight: 200;
+  line-height: 1em;
   /* line-height: -10; */
 }
 
@@ -729,10 +735,12 @@ footer {
   position: absolute;
   z-index: -1;
   width: 100%;
+  padding: 20px;
 }
 .div--footer {
   text-align: center;
   /* margin-top: 500px; */
+  line-height: 4rem;
 }
 .contact-btns {
   text-align: center;
@@ -744,7 +752,7 @@ footer {
 .contact-btns-link {
   display: inline-flex;
   justify-content: center;
-  margin-top: 10px;
+  margin: 10px 8px 0 0;
   position: relative;
   align-items: center; /* worked when i changed display: inline-block to inline-flex */
   /* background-color: beige; */
