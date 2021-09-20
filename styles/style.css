@@ -724,10 +724,15 @@ html > .loader {
 }
 
 /* ---------------------------------- FOOTER ----------------------------- */
+footer {
+  background-color: var(--background-color);
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+}
 .div--footer {
   text-align: center;
   /* margin-top: 500px; */
-  /* background-color: #01937c; */
 }
 .contact-btns {
   text-align: center;
