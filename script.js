@@ -121,7 +121,7 @@ console.log(genRandom(10, 20));
 // you = Person.new("you")
 // wanna_do_something? ? you.find(way) : you.find(excuse)
 
-// ------------------------- TYPE EFFECT------------------------------
+// ------------------------- TYPE EFFECT-----------------------------
 const firstName = 'Luciana';
 const lastName = 'Mascarenhas';
 
