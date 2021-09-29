@@ -35,11 +35,11 @@ canvas.setAttribute('height', window.innerHeight);
 let binaryNum = '01';
 
 binaryNum = binaryNum.split('');
-console.log(binaryNum);
+// console.log(binaryNum);
 
 const fontSize = 18;
 const columns = Math.round(canvas.width / fontSize);
-console.log(columns);
+// console.log(columns);
 
 const drops = [];
 
@@ -92,7 +92,7 @@ const genRandom = function (max, min) {
   return Math.trunc(Math.random() * (max - min) + 1) + min;
 };
 
-console.log(genRandom(10, 20));
+// console.log(genRandom(10, 20));
 
 // LOADER --------------------------------
 
