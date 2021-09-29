@@ -13,11 +13,11 @@ const canvas = document.getElementById('c');
 
 const cntxt = canvas.getContext('2d');
 
-window.addEventListener('resize', function () {
-  this.matchMedia.reload();
-  // this.location.reload();
-  // or this.matchMedia.reload() to stop reloading when scrolling
-});
+// window.addEventListener('resize', function () {
+//   // this.matchMedia.reload();
+//   this.location.reload();
+//   // or this.matchMedia.reload() to stop reloading when scrolling
+// });
 canvas.setAttribute('width', window.innerWidth);
 canvas.setAttribute('height', window.innerHeight);
 // canvas.width = document.body.clientWidth;
