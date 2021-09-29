@@ -35,17 +35,17 @@
   </head>
 
   <body>
-    <div class="loader">
+    <!-- <div class="loader">
       <div class="inner one"></div>
       <div class="inner two"></div>
       <div class="inner three"></div>
-    </div>
+    </div> -->
     <div class="page">
       <!-- <canvas id="c"></canvas> -->
       <header class="header">
         <div class="language-switcher-flags">
-          <a href="#"><img src="images/brazil.png" alt=""></a>
-          <a href="#"><img src="images/united-states.png" alt="brazil flag"></a>
+          <a href="#pt" class="reload-pt opacity-pt" data-reload><img  src="images/brazil.png" alt="brazil-flag"></a>
+          <a href="#en" class="reload-en opacity-en" data-reload><img  src="images/united-states.png" alt="u.s. flag"></a>
         </div>
 
         <canvas id="c"></canvas>
@@ -54,7 +54,7 @@
           <h1 class="main-title"></h1>
           <h1 class="main-title last-name"></h1>
 
-          <h4 class="header-h4">Full stack developer.</h4>
+          <h4 class="header-h4">Full-stack developer.</h4>
           <!-- <div id="dummy"></div> -->
         </div>
 
@@ -427,14 +427,12 @@
 
           <div class="section-text" data-aos="zoom-in-left">
             <h2>About</h2>
-            <p>
-              I am a full stack developer recently graduated from Le Wagon (Best coding bootcamp according to switch up). There I had the opportunity to gain knowledge in nice important tools and also designed, implemented and shipped to production a clone of airbnb and a rails prototype. Both tools and projects you can check it out down below on the following sections.
-            </p>
-            <p>
-              Learn to code is fascinating. From the front-end up to the back-end and its beauty, the possibility of turning real-life problems into code finding a solution that makes your life easier, it fascinates me. As a lifelong learner while I keep improving my knowledge on the tools i've learned, i am learning and always open to learn new ones.
-            </p>
-            <!-- Currently i am also learning node.Js, react and
-              NOSQL using mongo db as a dbms. -->
+            <div class="about-text">
+              <p>
+              Sou uma desenvolvedora Full-stack recentement graduada pela Le Wagon (Considerado melhor bootcamp de programação de acordo com switch up). Tive a oportunidade de colaborar projetando, implementando e enviando para produção projetos utilizando Figma, Ruby on Rails, HTML, CSS, SASS, Bootstrap, Javascript(ES6), SQL, Git, Github e Heroku. Você pode estar conferindo esse projetos nas sessões seguintes.  </p>
+              <p>Aprender a programar é fascinante. Do front-end ao back-end, a possibilidade de transformar problemas da vida real em código e solucioná-los, tornando a vida muito mais fácil, me fascina. Sempre disposta a aprender coisas novas, amo me desafiar e acredito que não há nada que não se possa aprender.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -525,9 +523,10 @@
               <!-- <div class="num">01</div> -->
               <a
                 class="card"
-                href="#"
+                href="https://petbnb-ronaltd.herokuapp.com/"
+                target = "_blank"
                 style="
-                  background-image: url(https://images.unsplash.com/photo-1522276498395-f4f68f7f8454?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1498&q=80);
+                  background-image: url(https://images.unsplash.com/photo-1601758177266-bc599de87707?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80); opacity: 0.7;
                 "
               >
                 <div class="text-cards">
@@ -536,7 +535,7 @@
                     Find a safe and comfortable place for your pet while you are
                     away
                   </p>
-                  <div class="date">6 oct 2017</div>
+                  <!-- <div class="date"></div> -->
                   <div class="tags">
                     <div class="tag">HTML</div>
                   </div>
@@ -550,18 +549,17 @@
                 class="card"
                 href="#"
                 style="
-                  background-image: url(https://images.unsplash.com/photo-1522276498395-f4f68f7f8454?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1498&q=80);
+                  background-image: url(https://www.incimages.com/uploaded_files/image/1920x1080/getty_637583458_347721.jpg); opacity: 0.7;
                 "
               >
                 <div>
-                  <h1>Petbnb.</h1>
+                  <h1>Leafs.</h1>
                   <p>
                     Find a safe and comfortable place for your pet while you are
                     away
                   </p>
-                  <div class="date">6 oct 2017</div>
+                  <!-- <div class="date"></div> -->
                   <div class="tags">
-                    <div class="tag">HTML</div>
                     <div class="tag">HTML</div>
                   </div>
                 </div>
@@ -585,8 +583,8 @@
 
       </footer>
     </div>
-    <!-- typed.js -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- typed.js
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineMax.min.js"></script>
     <!-- <script

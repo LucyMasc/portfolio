@@ -103,17 +103,17 @@ console.log(genRandom(10, 20));
 
 //////////
 
-document.onreadystatechange = function () {
-  const state = document.readyState;
-  if (state === 'interactive') {
-    document.querySelector('.page').style.visibility = 'hidden';
-  } else if (state === 'complete') {
-    setTimeout(() => {
-      document.querySelector('.page').style.visibility = 'visible';
-      removeLoader = loader.parentElement.removeChild(loader);
-    }, 1100);
-  }
-};
+// document.onreadystatechange = function () {
+//   const state = document.readyState;
+//   if (state === 'interactive') {
+//     document.querySelector('.page').style.visibility = 'hidden';
+//   } else if (state === 'complete') {
+//     setTimeout(() => {
+//       document.querySelector('.page').style.visibility = 'visible';
+//       removeLoader = loader.parentElement.removeChild(loader);
+//     }, 1100);
+//   }
+// };
 
 // frameLoop();
 // AOS.init();
@@ -155,3 +155,78 @@ const frameLoopLast = function () {
 setTimeout(() => {
   frameLoopLast();
 }, 1800);
+
+// LANGUAGE SWITCHER
+const language = {
+  english: {
+    subtitle: 'Full-stack developer.',
+    scrollDown: 'Scroll down',
+    aboutTitle: 'About',
+    aboutText:
+      "<p> I am a full-stack developer recently graduated from Le Wagon (Best coding bootcamp according to switch up). There I had the opportunity to gain knowledge in nice, important tools and also designed, implemented and shipped to production a clone of airbnb and a rails prototype. Both tools and projects you can check it out down below on the following sections. </p><p>Learn to code is fascinating. From the front-end up to the back-end and its beauty, the possibility of turning real-life problems into code finding a solution that makes your life easier, it fascinates me. As a lifelong learner while I keep improving my knowledge on the tools i've learned, i am learning and always open to learn new ones.</p>",
+    toolsTitle: 'Tools',
+    projectsTitle: 'Projects',
+    footerText:
+      'I am available and ready to be part of your team. I’m just a click away, are you sure you gonna miss it?',
+  },
+
+  portuguese: {
+    subtitle: 'Desenvolvedora Full-stack.',
+    scrollDown: 'Deslize',
+    aboutTitle: 'Sobre',
+    aboutText:
+      '<p> Sou uma desenvolvedora full-stack recentement graduada pela Le Wagon (Considerado melhor bootcamp de programação de acordo com switch up). No bootcamp tive a oportunidade de ganhar bastante conhecimento em importantes ferramentas de programação, além de projetar, implementar e enviar para produção um clone do airbnb e um protótipo do rails, os quais você pode dar uma conferida nas sessões seguintes.</p><p>Aprender a programar é fascinante. Do front-end ao back-end, a possibilidade de transformar problemas da vida real em código e solucioná-los, tornando a vida do usuário muito mais fácil, me fascina. Como uma eterna aprendiz, enquanto busco sempre melhorar meu conhecimento nas ferramentas que aprendi, eu estou aprendendo e aberta a aprender novas tecnologias.</p>',
+    toolsTitle: 'Ferramentas',
+    projectsTitle: 'Projetos',
+    footerText:
+      'Estou disponível e pronta para fazer parte do seu time. Estou apenas a alguns cliques de distäncia, coisa pouca, tem certeza que vai deixar passar?',
+  },
+};
+const portuguese = document.querySelector('.reload-pt');
+const english = document.querySelector('.reload-en');
+const reload = document.querySelectorAll('[data-reload]');
+
+portuguese.addEventListener('click', function () {
+  if (window.location.hash === '#en' || window.location.hash === '#pt') {
+    // console.log(window.location.hash);
+    document.querySelector('.header-h4').textContent =
+      language.portuguese.subtitle;
+    document.querySelector('.scroll-btn-a').textContent =
+      language.portuguese.scrollDown;
+    document.querySelector('.section-text h2').textContent =
+      language.portuguese.aboutTitle;
+    document.querySelector('.section-text .about-text').innerHTML =
+      language.portuguese.aboutText;
+    document.querySelector('.section-2-title h2').textContent =
+      language.portuguese.toolsTitle;
+    document.querySelector('.cards-title h2').textContent =
+      language.portuguese.projectsTitle;
+    document.querySelector('.div--footer p').textContent =
+      language.portuguese.footerText;
+
+    this.classList.remove('opacity-pt');
+    english.classList.add('opacity-en');
+  }
+});
+
+english.addEventListener('click', function (e) {
+  // window.location.reload(true);
+  if (window.location.hash === '#pt' || window.location.hash === '#en') {
+    document.querySelector('.header-h4').textContent =
+      language.english.subtitle;
+    document.querySelector('.scroll-btn-a').textContent =
+      language.english.scrollDown;
+    document.querySelector('.section-text h2').textContent =
+      language.english.aboutTitle;
+    document.querySelector('.section-text .about-text').innerHTML =
+      language.english.aboutText;
+    document.querySelector('.section-2-title h2').textContent =
+      language.english.toolsTitle;
+    document.querySelector('.cards-title h2').textContent =
+      language.english.projectsTitle;
+    document.querySelector('.div--footer p').textContent =
+      language.english.footerText;
+    this.classList.remove('opacity-en');
+    portuguese.classList.add('opacity-pt');
+  }
+});

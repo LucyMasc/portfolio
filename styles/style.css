@@ -45,7 +45,21 @@ h2 {
   /* margin-top: auto; */
   /* position: absolute; */
 }
+.opacity-pt {
+  opacity: 0.6;
+}
 
+.opacity-pt:hover {
+  opacity: 1;
+}
+
+.opacity-en {
+  opacity: 0.6;
+}
+
+.opacity-en:hover {
+  opacity: 1;
+}
 canvas {
   display: flex;
   position: absolute;
@@ -610,7 +624,7 @@ svg {
   left: -50%;
   top: -50%;
   z-index: -5;
-  transition: all, 0.5s;
+  transition: all, 0.4s;
   transition-timing-function: ease-in-out;
 }
 .card:before {
