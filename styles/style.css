@@ -316,6 +316,7 @@ svg {
   /* height: 820px; */
   height: 150%;
   /* width: 100%; */
+  /* background-color: #01937c; */
 }
 
 .section1-feature {
@@ -338,6 +339,7 @@ svg {
   line-height: 1.8em;
   /* letter-spacing: 0.04em; */
   word-spacing: 0.06em;
+  /* background-color: pink; */
 }
 .section-photo {
   text-align: center;
@@ -345,25 +347,39 @@ svg {
   /* background-color: #006bc0; */
   margin-bottom: 20px;
   height: 32rem;
-  width: 26rem;
+  /* width: 26rem; */
 }
 
 .section-photo img {
   border: 6px solid rgba(60, 113, 136, 0.5);
   height: 33rem;
-  width: 26rem;
+  /* width: 26rem; */
 }
 
 /* Responsive layout - makes a one column-layout instead of two-column layout */
 @media (max-width: 768px) {
   .section1-feature {
     flex-direction: column;
-    padding: 5vmin;
+    /* padding: 5vmin; */
 
     /* margin-right: 0; */
   }
   .section-text {
     text-align: center;
+  }
+}
+@media (max-width: 420px) {
+  .section1-feature {
+    padding: 37px;
+  }
+  .section-text {
+    width: 20rem;
+  }
+  .section-photo {
+    height: 20rem;
+  }
+  .section-photo img {
+    height: 20rem;
   }
 }
 /* ---------------------------- SECTION 2  -----------------------*/
