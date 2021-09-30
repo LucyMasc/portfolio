@@ -624,14 +624,14 @@ svg {
   font-size: 2.5em;
 }
 .cards-wrapper {
-  background-color: blue;
+  /* background-color: blue; */
   display: grid;
   justify-content: center;
   align-items: center;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 4rem;
   padding: 4rem;
-  /* margin: 0 auto; */
+  margin: 0 auto;
   width: 100%;
 }
 

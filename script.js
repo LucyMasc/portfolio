@@ -190,7 +190,7 @@ portuguese.addEventListener('click', function () {
   if (
     window.location.hash === '#en' ||
     window.location.hash === '#pt' ||
-    window.location.has === ''
+    window.location.hash === ''
   ) {
     // console.log(window.location.hash);
     document.querySelector('.header-h4').textContent =
@@ -218,7 +218,7 @@ english.addEventListener('click', function (e) {
   if (
     window.location.hash === '#pt' ||
     window.location.hash === '#en' ||
-    window.location.has === ''
+    window.location.hash === ''
   ) {
     document.querySelector('.header-h4').textContent =
       language.english.subtitle;
@@ -238,3 +238,6 @@ english.addEventListener('click', function (e) {
     portuguese.classList.add('opacity-pt');
   }
 });
+
+// const urlParams = new URLSearchParams(window.location.search);
+// console.log(location.hash);
