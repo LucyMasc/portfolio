@@ -15,6 +15,8 @@
 body {
   background-color: var(--background-color-section);
   color: #f7f7f7;
+  width: 100%;
+  /* height: ; */
 }
 h2 {
   color: #4ebceb;
@@ -86,6 +88,8 @@ canvas {
 .header-h4 {
   margin-top: 20px;
   letter-spacing: 1px;
+  width: 155%;
+  /* background-color: red; */
 }
 .svg-div > svg {
   /* background-color: pink; */
@@ -95,17 +99,17 @@ canvas {
 
 .header--title {
   margin: 250px 0px 200px 90px;
-  padding-left: 8%; /* this makes the title be far from the right border on small screens
+  /* padding-left: 8%; this makes the title be far from the right border on small screens */
   font-family: 'Open Sans', sans-serif;
   /* position: fixed; */
   text-align: left;
-  width: 100%;
+  /* width: 600px; */
   /* background: hotpink; */
 }
 
 .main-title {
   /* position: fixed; */
-  font-size: 9vmin;
+  /* font-size: 50px; */
   /* font-size: 400%; */
   font-weight: 200;
   line-height: 1em;
@@ -114,6 +118,35 @@ canvas {
   /* line-height: -10; */
 }
 
+@media screen and (min-width: 1025px) {
+  .header--title {
+    width: 30%;
+    /* background-color: #01937c; */
+    margin-left: 130px;
+  }
+  .main-title {
+    font-size: 80px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .header--title {
+    /* background-color: pink; */
+    width: 40%;
+    margin-left: 130px;
+    margin-top: 300px;
+  }
+  .main-title {
+    /* font-size: 260%; */
+    font-size: 50px;
+    /* background-color: pink; */
+  }
+  .svg-div > svg {
+    margin-left: 40px;
+    /* background-color: #01937c; */
+    width: 70%;
+  }
+}
 @media screen and (max-width: 778px) {
   svg {
     display: none;
@@ -122,8 +155,8 @@ canvas {
 
 @media screen and (max-width: 420px) {
   .header--title {
-    font-size: 10vw;
-    padding: 70px 70px 70px 80px;
+    /* font-size: 50px; */
+    /* padding: 60px 60px 60px 70px; */
     margin: 240px 0px 200px 0px;
     /* background-color: #09d1b3; */
   }
@@ -134,7 +167,17 @@ canvas {
     height: 100%;
   }
 }
-
+@media screen and (max-width: 1024) {
+  /* .header--title {
+    padding-left: 0;
+  }
+  .main-title {
+    font-size: 50px;
+  } */
+  /* .svg-div > svg {
+    margin: 100px 0px 0 30px;
+  } */
+}
 /* SVG GIRL PROGRAMMER HEADER */
 
 #hair {
@@ -211,7 +254,7 @@ svg {
 
 .scroll-btn {
   position: absolute;
-  width: 350%;
+  width: 300%;
   right: 10%;
   /* background-color: white; */
 }
@@ -388,7 +431,9 @@ svg {
   padding: 40px;
   /* background-color: rgb(44, 40, 40); */
   height: 100%;
+  width: 100%; /*  */
   /* z-index: -1; */
+  /* background-color: green; */
 }
 .section-2-title > h2 {
   position: relative;
@@ -402,6 +447,7 @@ svg {
   justify-content: space-around;
   padding: 20px 50px 50px 50px;
   border-bottom: 0.1px solid;
+  /* background-color: pink; */
 }
 
 .section-2-imgs > div {
@@ -420,6 +466,7 @@ svg {
   transition: 0.5s;
   display: flex;
   border-radius: 10px;
+  /* background-color: #30336b; */
 }
 
 .section-2-imgs div::before {
@@ -577,15 +624,15 @@ svg {
   font-size: 2.5em;
 }
 .cards-wrapper {
-  /* background-color: blue; */
+  background-color: blue;
   display: grid;
   justify-content: center;
   align-items: center;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 4rem;
   padding: 4rem;
-  margin: 0 auto;
-  width: max-content;
+  /* margin: 0 auto; */
+  width: 100%;
 }
 
 .card {
@@ -871,3 +918,8 @@ footer {
   -webkit-text-fill-color: transparent;
   transform: scale(2.2);
 }
+
+/* .pages {
+  width: 100%;
+  height: auto;
+} */
