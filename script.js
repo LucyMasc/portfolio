@@ -13,11 +13,11 @@ const canvas = document.getElementById('c');
 
 const cntxt = canvas.getContext('2d');
 
-window.addEventListener('resize', function () {
-  // this.matchMedia.reload();
-  this.location.reload();
-  // or this.matchMedia.reload() to stop reloading when scrolling
-});
+// window.addEventListener('resize', function () {
+//   // this.matchMedia.reload();
+//   this.location.reload();
+//   // or this.matchMedia.reload() to stop reloading when scrolling
+// });
 canvas.setAttribute('width', window.innerWidth);
 canvas.setAttribute('height', window.innerHeight);
 // canvas.width = document.body.clientWidth;
@@ -141,7 +141,7 @@ const frameLoop = function () {
 
 setTimeout(() => {
   frameLoop();
-}, 1100);
+}, 200);
 
 const frameLoopLast = function () {
   const loopTimer2 = setTimeout('frameLoopLast()', 100);
@@ -154,7 +154,7 @@ const frameLoopLast = function () {
 
 setTimeout(() => {
   frameLoopLast();
-}, 1800);
+}, 910);
 
 // LANGUAGE SWITCHER
 const language = {
@@ -187,7 +187,11 @@ const english = document.querySelector('.reload-en');
 const reload = document.querySelectorAll('[data-reload]');
 
 portuguese.addEventListener('click', function () {
-  if (window.location.hash === '#en' || window.location.hash === '#pt') {
+  if (
+    window.location.hash === '#en' ||
+    window.location.hash === '#pt' ||
+    window.location.has === ''
+  ) {
     // console.log(window.location.hash);
     document.querySelector('.header-h4').textContent =
       language.portuguese.subtitle;
@@ -211,7 +215,11 @@ portuguese.addEventListener('click', function () {
 
 english.addEventListener('click', function (e) {
   // window.location.reload(true);
-  if (window.location.hash === '#pt' || window.location.hash === '#en') {
+  if (
+    window.location.hash === '#pt' ||
+    window.location.hash === '#en' ||
+    window.location.has === ''
+  ) {
     document.querySelector('.header-h4').textContent =
       language.english.subtitle;
     document.querySelector('.scroll-btn-a').textContent =

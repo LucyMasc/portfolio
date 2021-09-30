@@ -24,15 +24,19 @@ h2 {
   background-color: var(--background-color-section);
 } */
 /* ---------------------------- HEADER -----------------------*/
-
+/* .hidden {
+  -webkit-transition: all 5s ease;
+  -moz-transition: 5s ease;
+  transition: 5s ease;
+} */
 .language-switcher-flags {
   display: inline-block;
   justify-content: space-around;
   position: absolute;
   /* height: 10px; */
   height: 10px;
-  right: 100px;
-  top: 20px;
+  right: 80px;
+  top: 30px;
 }
 .language-switcher-flags > a {
   margin: 0 7px;
@@ -79,33 +83,55 @@ canvas {
   /* padding: 90px; */
   /* background-color: #09d1b3; */
 }
+.header-h4 {
+  margin-top: 20px;
+  letter-spacing: 1px;
+}
 .svg-div > svg {
-  /* background-color: blue; */
+  /* background-color: pink; */
   /* position: fixed; */
-  margin: 85px 0px 0 50px;
+  margin: 100px 150px 0 30px;
 }
 
 .header--title {
-  margin: 220px 50px 200px 0px;
+  margin: 250px 0px 200px 90px;
   padding-left: 8%; /* this makes the title be far from the right border on small screens
   font-family: 'Open Sans', sans-serif;
   /* position: fixed; */
   text-align: left;
-  width: 30rem;
+  width: 100%;
   /* background: hotpink; */
 }
 
 .main-title {
   /* position: fixed; */
-  font-size: 10vmin;
+  font-size: 9vmin;
+  /* font-size: 400%; */
   font-weight: 200;
   line-height: 1em;
+  letter-spacing: -1px;
+  /* line-height: -10.1; */
   /* line-height: -10; */
 }
 
-@media (max-width: 778px) {
+@media screen and (max-width: 778px) {
   svg {
     display: none;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .header--title {
+    font-size: 10vw;
+    padding: 70px 70px 70px 80px;
+    margin: 240px 0px 200px 0px;
+    /* background-color: #09d1b3; */
+  }
+  .language-switcher-flags {
+    right: 30px;
+  }
+  canvas {
+    height: 100%;
   }
 }
 
@@ -127,6 +153,9 @@ canvas {
   animation: code 0.8s forwards infinite alternate;
 }
 svg {
+  /* background-color: blue;
+  margin: 85px 0px 0 50px; */
+
   animation: svg-complete 3s ease-in-out infinite alternate;
 }
 
@@ -175,7 +204,7 @@ svg {
   display: flex;
   /* flex-wrap: wrap; */
   position: absolute;
-  top: 700px;
+  top: 735px;
   left: 90%;
   /* background-color: white; */
 }
