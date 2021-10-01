@@ -241,3 +241,5 @@ english.addEventListener('click', function (e) {
 
 // const urlParams = new URLSearchParams(window.location.search);
 // console.log(location.hash);
+
+// document.querySelector('body').style.minHeight = window.height;

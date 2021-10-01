@@ -71,7 +71,7 @@ canvas {
   position: absolute;
   z-index: -1;
   /* included now below */
-  width: 100%;
+
   height: 1000px;
 }
 
@@ -84,12 +84,13 @@ canvas {
   /* width 100% in small screens is ok on the left, but still space left on the right */
   /* padding: 90px; */
   /* background-color: #09d1b3; */
+  /* background-color: #09d1b3; */
 }
 .header-h4 {
   margin-top: 20px;
   letter-spacing: 1px;
-  width: 260px;
-  /* background-color: red; */
+  /* width: 305px; */
+  background-color: red;
 }
 .svg-div > svg {
   /* background-color: pink; */
@@ -133,6 +134,9 @@ canvas {
     /* background-color: #01937c; */
     width: 70%;
   }
+  canvas {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -152,6 +156,9 @@ canvas {
     margin-left: 30px;
     /* background-color: #01937c; */
     width: 70%;
+  }
+  canvas {
+    width: 100%;
   }
 }
 @media screen and (max-width: 778px) {
@@ -423,13 +430,25 @@ svg {
     padding: 37px;
   }
   .section-text {
-    width: 20rem;
+    width: 19rem;
+    /* align-content: center; */
   }
   .section-photo {
     height: 20rem;
   }
   .section-photo img {
     height: 20rem;
+  }
+}
+
+@media (max-width: 376px) {
+  .section1-feature {
+    padding: 0;
+    align-items: center;
+  }
+  .section-text p {
+    /* height: none; */
+    /* font-size: -5rem; */
   }
 }
 /* ---------------------------- SECTION 2  -----------------------*/
@@ -620,6 +639,18 @@ svg {
   75% {
     transform: translateX(-6px) rotate(-1.2deg);
     transform: translateX(-6px) rotate(-1.2deg);
+  }
+}
+
+@media (max-width: 767px) {
+  .section-2-imgs {
+    margin-top: 30px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2rem;
+    padding: 4.5rem;
   }
 }
 
@@ -879,7 +910,7 @@ footer {
 .div--footer > p {
   /* background-color: #09d1b3; */
   display: inline-block;
-  width: 500px;
+  width: 100%;
   line-height: 2;
   letter-spacing: 0.5px;
 }
