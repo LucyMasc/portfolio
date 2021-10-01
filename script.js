@@ -159,7 +159,7 @@ setTimeout(() => {
 // LANGUAGE SWITCHER
 const language = {
   english: {
-    subtitle: 'Full-stack developer.',
+    subtitle: '<em>Full-stack developer.</em>',
     scrollDown: 'Scroll down',
     aboutTitle: 'About',
     aboutText:
@@ -174,7 +174,7 @@ const language = {
   },
 
   portuguese: {
-    subtitle: 'Desenvolvedora Full-stack.',
+    subtitle: '<em>Desenvolvedora Full-stack.</em>',
     scrollDown: 'Deslize',
     aboutTitle: 'Sobre',
     aboutText:
@@ -201,7 +201,7 @@ portuguese.addEventListener('click', function () {
     window.location.hash === ''
   ) {
     // console.log(window.location.hash);
-    document.querySelector('.header-h4').textContent =
+    document.querySelector('.header-h4').innerHTML =
       language.portuguese.subtitle;
     document.querySelector('.scroll-btn-a').textContent =
       language.portuguese.scrollDown;
@@ -232,8 +232,7 @@ english.addEventListener('click', function (e) {
     window.location.hash === '#en' ||
     window.location.hash === ''
   ) {
-    document.querySelector('.header-h4').textContent =
-      language.english.subtitle;
+    document.querySelector('.header-h4').innerHTML = language.english.subtitle;
     document.querySelector('.scroll-btn-a').textContent =
       language.english.scrollDown;
     document.querySelector('.section-text h2').textContent =

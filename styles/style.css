@@ -16,10 +16,12 @@ body {
   background-color: var(--background-color-section);
   color: #f7f7f7;
   width: 100%;
+  /* font-family: 'Nunito Sans', sans-serif; */
   /* height: ; */
 }
 h2 {
   color: #4ebceb;
+  /* font-weight: 600; */
 }
 
 /* .page{
@@ -93,6 +95,7 @@ canvas {
   /* background-color: red; */
   font-size: 22px;
   font-weight: lighter;
+  font-family: 'Roboto', sans-serif;
 }
 .svg-div > svg {
   /* background-color: pink; */
@@ -114,6 +117,7 @@ canvas {
   /* position: fixed; */
   /* font-size: 50px; */
   /* font-size: 400%; */
+  font-family: 'Roboto', sans-serif;
   font-weight: 200;
   line-height: 1em;
   letter-spacing: -1px;
@@ -902,19 +906,28 @@ footer {
   position: absolute;
   z-index: -1;
   width: 100%;
-  padding: 20px;
+  padding: 10px;
 }
 .div--footer {
   text-align: center;
-  /* margin-top: 500px; */
+  margin-top: 10px;
   line-height: 4rem;
 }
 .div--footer > p {
   /* background-color: #09d1b3; */
   display: inline-block;
   width: 100%;
-  line-height: 2;
+  line-height: 1.6;
   letter-spacing: 0.5px;
+  color: #d0dae2;
+}
+.div--footer > .footer-copyright {
+  font-size: 13px;
+  color: #80878d;
+}
+.div--footer > p > a {
+  text-decoration: none;
+  color: #6d7780;
 }
 .contact-btns {
   text-align: center;
