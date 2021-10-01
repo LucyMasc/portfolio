@@ -89,8 +89,10 @@ canvas {
 .header-h4 {
   margin-top: 20px;
   letter-spacing: 1px;
-  /* width: 305px; */
-  background-color: red;
+  width: 290px;
+  /* background-color: red; */
+  font-size: 22px;
+  font-weight: lighter;
 }
 .svg-div > svg {
   /* background-color: pink; */
