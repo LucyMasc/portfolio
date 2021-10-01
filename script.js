@@ -166,8 +166,11 @@ const language = {
       "<p> I am a full-stack developer recently graduated from Le Wagon (Best coding bootcamp according to switch up). There I had the opportunity to collaborate designing, implementing and shipping to production projects using Figma, Ruby on Rails, HTML, CSS, SASS, Bootstrap, Javascript(ES6), SQL, Git, Github e Heroku . You can check it out on the projects section down below. </p><p>Learn to code is fascinating. From the front-end up to the back-end and its beauty, the possibility of turning real-life problems into code finding a solution that makes your life easier, it fascinates me. Always open to learn new things, love to challenge myself and truly believe that there's nothing we can't learn.</p>",
     toolsTitle: 'Tools',
     projectsTitle: 'Projects',
+    leafsText: 'Help the enviroment while earn some cashback.',
+    petbnbText:
+      'Find a safe and comfortable place for your pet while you are away.',
     footerText:
-      'I am available and ready to be part of your team. I’m just a few clicks away, are you sure you gonna miss it?',
+      'I am available and ready to be part of your team.<br/> I’m just a few clicks away, are you sure you gonna miss it?',
   },
 
   portuguese: {
@@ -210,7 +213,11 @@ portuguese.addEventListener('click', function () {
       language.portuguese.toolsTitle;
     document.querySelector('.cards-title h2').textContent =
       language.portuguese.projectsTitle;
-    document.querySelector('.div--footer p').textContent =
+    document.querySelector('.petbnb-text').textContent =
+      language.portuguese.petbnbText;
+    document.querySelector('.leafs-text').textContent =
+      language.portuguese.leafsText;
+    document.querySelector('.div--footer p').innerHTML =
       language.portuguese.footerText;
 
     this.classList.remove('opacity-pt');
@@ -237,7 +244,11 @@ english.addEventListener('click', function (e) {
       language.english.toolsTitle;
     document.querySelector('.cards-title h2').textContent =
       language.english.projectsTitle;
-    document.querySelector('.div--footer p').textContent =
+    document.querySelector('.petbnb-text').textContent =
+      language.english.petbnbText;
+    document.querySelector('.leafs-text').textContent =
+      language.english.leafsText;
+    document.querySelector('.div--footer p').innerHTML =
       language.english.footerText;
     this.classList.remove('opacity-en');
     portuguese.classList.add('opacity-pt');
