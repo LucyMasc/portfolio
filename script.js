@@ -163,11 +163,11 @@ const language = {
     scrollDown: 'Scroll down',
     aboutTitle: 'About',
     aboutText:
-      "<p> I am a full-stack developer recently graduated from Le Wagon (Best coding bootcamp according to switch up). There I had the opportunity to gain knowledge in nice, important tools and also designed, implemented and shipped to production a clone of airbnb and a rails prototype. Both tools and projects you can check it out down below on the following sections. </p><p>Learn to code is fascinating. From the front-end up to the back-end and its beauty, the possibility of turning real-life problems into code finding a solution that makes your life easier, it fascinates me. As a lifelong learner while I keep improving my knowledge on the tools i've learned, i am learning and always open to learn new ones.</p>",
+      "<p> I am a full-stack developer recently graduated from Le Wagon (Best coding bootcamp according to switch up). There I had the opportunity to collaborate designing, implementing and shipping to production projects using Figma, Ruby on Rails, HTML, CSS, SASS, Bootstrap, Javascript(ES6), SQL, Git, Github e Heroku . You can check it out on the projects section down below. </p><p>Learn to code is fascinating. From the front-end up to the back-end and its beauty, the possibility of turning real-life problems into code finding a solution that makes your life easier, it fascinates me. Always open to learn new things, love to challenge myself and truly believe that there's nothing we can't learn.</p>",
     toolsTitle: 'Tools',
     projectsTitle: 'Projects',
     footerText:
-      'I am available and ready to be part of your team. I’m just a click away, are you sure you gonna miss it?',
+      'I am available and ready to be part of your team. I’m just a few clicks away, are you sure you gonna miss it?',
   },
 
   portuguese: {
@@ -175,13 +175,18 @@ const language = {
     scrollDown: 'Deslize',
     aboutTitle: 'Sobre',
     aboutText:
-      '<p> Sou uma desenvolvedora full-stack recentement graduada pela Le Wagon (Considerado melhor bootcamp de programação de acordo com switch up). No bootcamp tive a oportunidade de ganhar bastante conhecimento em importantes ferramentas de programação, além de projetar, implementar e enviar para produção um clone do airbnb e um protótipo do rails, os quais você pode dar uma conferida nas sessões seguintes.</p><p>Aprender a programar é fascinante. Do front-end ao back-end, a possibilidade de transformar problemas da vida real em código e solucioná-los, tornando a vida do usuário muito mais fácil, me fascina. Como uma eterna aprendiz, enquanto busco sempre melhorar meu conhecimento nas ferramentas que aprendi, eu estou aprendendo e aberta a aprender novas tecnologias.</p>',
+      '<p> Sou uma desenvolvedora Full-stack recentemente graduada pela Le Wagon (Considerado melhor bootcamp de programação de acordo com switch up). Tive a oportunidade de colaborar projetando, implementando e enviando para produção projetos utilizando Figma, Ruby on Rails, HTML, CSS, SASS, Bootstrap, Javascript(ES6), SQL, Git, Github e Heroku. Você pode estar conferindo esses projetos nas sessões seguintes.</p><p>Aprender a programar é fascinante. Do front-end ao back-end, a possibilidade de transformar problemas da vida real em código e solucioná-los, tornando a vida muito mais fácil, me fascina. Sempre disposta a aprender coisas novas, amo me desafiar e acredito que não há nada que não se possa aprender.</p>',
     toolsTitle: 'Ferramentas',
     projectsTitle: 'Projetos',
+    leafsText:
+      'Preserve o meio ambiente! Faça parte dessa mudança e ainda ganhe cash back.',
+    petbnbText:
+      'Encontre um lugar seguro e confortável para seu animalzinho enquanto estiver fora.',
     footerText:
-      'Estou disponível e pronta para fazer parte do seu time. Estou apenas a alguns cliques de distäncia, coisa pouca, tem certeza que vai deixar passar?',
+      'Estou disponível e pronta para fazer parte do seu time.<br/> Estou apenas a alguns cliques de distância, certeza que vai deixar passar?',
   },
 };
+
 const portuguese = document.querySelector('.reload-pt');
 const english = document.querySelector('.reload-en');
 const reload = document.querySelectorAll('[data-reload]');
