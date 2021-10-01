@@ -876,6 +876,13 @@ footer {
   /* margin-top: 500px; */
   line-height: 4rem;
 }
+.div--footer > p {
+  /* background-color: #09d1b3; */
+  display: inline-block;
+  width: 500px;
+  line-height: 2;
+  letter-spacing: 0.5px;
+}
 .contact-btns {
   text-align: center;
   /* justify-content: space-around; */
