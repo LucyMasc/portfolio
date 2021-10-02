@@ -129,7 +129,7 @@ canvas {
   .header--title {
     width: 30%;
     /* background-color: #01937c; */
-    margin-left: 100px;
+    margin-left: 120px;
     /* padding-left: 3vw; */
   }
   .main-title {
@@ -138,7 +138,9 @@ canvas {
   .svg-div > svg {
     margin-left: 130px;
     /* background-color: #01937c; */
-    width: 70%;
+    width: 540px;
+    /* had to set pixel unit instead of % due to differences between browsers */
+    /* width: 100% before */
   }
   canvas {
     width: 100%;
@@ -282,7 +284,7 @@ svg {
 .scroll-btn button {
   text-decoration: none;
   color: #5babcd;
-  font-size: 1vw;
+  font-size: 15px;
   font-weight: 600;
   letter-spacing: 0.5px;
   border: none;
