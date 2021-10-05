@@ -1,7 +1,6 @@
 'use strict';
 const mainTitle = document.querySelector('.main-title');
 const mainTitleLast = document.querySelector('.last-name');
-// console.log((mainTitleSpan.innerHTML = 2));
 const scrollBtn = document.querySelector('.scroll-btn-a');
 const section1 = document.querySelector('.section-1');
 const svgGirlProgrammer = document.querySelector('svg');
