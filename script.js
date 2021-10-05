@@ -1,6 +1,4 @@
-// 'use strict';
-// import 'matchmedia-polyfill';
-// import 'matchmedia-polyfill/matchMedia.addListener';
+'use strict';
 const mainTitle = document.querySelector('.main-title');
 const mainTitleLast = document.querySelector('.last-name');
 // console.log((mainTitleSpan.innerHTML = 2));
@@ -13,33 +11,15 @@ const canvas = document.getElementById('c');
 
 const cntxt = canvas.getContext('2d');
 
-// window.addEventListener('resize', function () {
-//   // this.matchMedia.reload();
-//   this.location.reload();
-//   // or this.matchMedia.reload() to stop reloading when scrolling
-// });
 canvas.setAttribute('width', window.innerWidth);
 canvas.setAttribute('height', window.innerHeight);
-// canvas.width = document.body.clientWidth;
-// canvas.height = window.screen.height;
-// canvas.width = window.screen.width;
-// canvas.height = window.innerHeight;
-
-// canvas.width = window.innerWidth;
-// if (matchMedia('only screen and (max-width: 480px)').matches) {
-//   canvas.height = window.screen.height;
-//   canvas.width = window.screen.width;
-//   // smartphone/iphone... maybe run some small-screen related dom scripting?
-// }
 
 let binaryNum = '01';
 
 binaryNum = binaryNum.split('');
-// console.log(binaryNum);
 
 const fontSize = 18;
 const columns = Math.round(canvas.width / fontSize);
-// console.log(columns);
 
 const drops = [];
 
@@ -48,8 +28,6 @@ Array(columns)
   .forEach(function (num, i) {
     drops[i] = 1;
   });
-
-// console.log(columns);
 
 const draw = function () {
   cntxt.fillStyle = 'rgba(0, 0, 0, 0.05)';
@@ -72,7 +50,7 @@ const draw = function () {
 };
 setInterval(draw, 80);
 
-// SCROLL DOWN BUTTON
+//----------- SCROLL DOWN BUTTON ----------------
 
 scrollBtn.addEventListener('click', function (e) {
   const s1coords = section1.getBoundingClientRect();
@@ -92,9 +70,7 @@ const genRandom = function (max, min) {
   return Math.trunc(Math.random() * (max - min) + 1) + min;
 };
 
-// console.log(genRandom(10, 20));
-
-// LOADER --------------------------------
+//------------------------- LOADER --------------------------------
 
 // window.addEventListener('load', function () {
 //   loader.parentElement.removeChild(loader);
@@ -114,12 +90,6 @@ const genRandom = function (max, min) {
 //     }, 1100);
 //   }
 // };
-
-// frameLoop();
-// AOS.init();
-
-// you = Person.new("you")
-// wanna_do_something? ? you.find(way) : you.find(excuse)
 
 // ------------------------- TYPE EFFECT-----------------------------
 const firstName = 'Luciana';
@@ -192,7 +162,6 @@ const language = {
 
 const portuguese = document.querySelector('.reload-pt');
 const english = document.querySelector('.reload-en');
-const reload = document.querySelectorAll('[data-reload]');
 
 portuguese.addEventListener('click', function () {
   if (
@@ -200,7 +169,6 @@ portuguese.addEventListener('click', function () {
     window.location.hash === '#pt' ||
     window.location.hash === ''
   ) {
-    // console.log(window.location.hash);
     document.querySelector('.header-h4').innerHTML =
       language.portuguese.subtitle;
     document.querySelector('.scroll-btn-a').textContent =
@@ -219,14 +187,12 @@ portuguese.addEventListener('click', function () {
       language.portuguese.leafsText;
     document.querySelector('.div--footer p').innerHTML =
       language.portuguese.footerText;
-
     this.classList.remove('opacity-pt');
     english.classList.add('opacity-en');
   }
 });
 
 english.addEventListener('click', function (e) {
-  // window.location.reload(true);
   if (
     window.location.hash === '#pt' ||
     window.location.hash === '#en' ||
@@ -253,8 +219,3 @@ english.addEventListener('click', function (e) {
     portuguese.classList.add('opacity-pt');
   }
 });
-
-// const urlParams = new URLSearchParams(window.location.search);
-// console.log(location.hash);
-
-// document.querySelector('body').style.minHeight = window.height;
